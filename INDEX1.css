@@ -1,0 +1,83 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #def7f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+.game-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(222, 21, 21, 0.1);
+    width: 300px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.tile.correct {
+    background-color: #24ec1d;
+    color: rgb(22, 22, 22);
+    border: none;
+}
+
+.tile.present {
+    background-color: #28b528;
+    color: rgb(249, 250, 247);
+    border: none;
+}
+
+.tile.absent {
+    background-color: #ff0000;
+    color: rgb(2, 0, 0);
+    border: none;
+}
+
+#guess-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #060200;
+    color: rgb(250, 247, 247);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #294e26;
+}
+
+#message {
+    margin-top: 10px;
+    color: #e7cf60;
+}
